@@ -1,0 +1,6 @@
+---
+# file: group_vars/all
+default_uri_timeout: 60
+default_uri_retries: 5
+default_uri_delay: 5
+ansible_python_interpreter: /src/omam40/venv/bin/python

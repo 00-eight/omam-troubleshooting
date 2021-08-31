@@ -1,0 +1,21 @@
+---
+- hosts: all
+  connection: local
+  gather_facts: False
+
+  collections: 
+  - dellemc.openmanage
+
+  tasks:
+  - name: Manage SmartFabric
+    ome_smart_fabric:
+      hostname: "{{ inventory_hostname }}"
+      username: "{{ ngm_username }}"
+      password: "{{ ngm_password }}"
+      name: MX9116N
+      state: present
+      description: "{{ smart_fabric_description | default(omit) }}"
+      fabric_design: "{{ fabric_design }}"
+      primary_switch_service_tag: "{{ primary_switch_service_tag }}"
+      secondary_switch_service_tag: "{{ secondary_switch_service_tag }}"
+      override_LLDP_configuration: "{{ override_LLDP_configuration }}"

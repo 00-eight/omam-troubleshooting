@@ -1,0 +1,15 @@
+{"ANSIBLE_MODULE_ARGS": {
+    "description": null,
+    "fabric_design": "2xMX9116n_Fabric_Switching_Engines_in_different_chassis",
+    "hostname": "192.168.0.120",
+    "name": "MX9116N",
+    "new_name": null,
+    "override_LLDP_configuration": "Disabled",
+    "password": "calvin",
+    "port": 443,
+    "primary_switch_service_tag": "1234567",
+    "secondary_switch_service_tag": "8912345",
+    "state": "present",
+    "username": "root"
+}
+}
